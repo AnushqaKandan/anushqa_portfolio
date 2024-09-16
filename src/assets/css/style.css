@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
+
+*,
+*::after
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* Custom variables */
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+section{
+    scroll-margin-block: 6.7rem;
+}
+
+/*Custom Variable */
+:root {
+    --primary: rgb(248, 165, 179) ;
+    --secondary: white;
+    --alternative: rgb(7, 3, 3);
+    --tertiary: maroon;
+    --awesome: rgb(232, 37, 37);
+    --mainBox-shadow: black;
+    --shadow:var(--primary);
+}
+@property --top-left {
+    syntax:"<percentage>";
+    inherits: false;
+    initial-value:50%;
+}
+@property --top-right{
+    syntax: "<Percentage>";
+    inherits: false;
+    initial-value:50%;
+}
+@property --bottom-left{
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value:0%;
+}
+@property --bottom-right {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value:0%;
+}
+
+
+/* wrapper */
+:is(.wrapper){
+    grid-template-rows: auto minmax(100dvh, 100%) auto;
+    background-color: var(--primary);
+}
+
+/* app */
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+  }
+
+  /*Navbar & footer*/
+:is(.navbar, footer){
+    background-color: var(--tertiary);
+}
+
+/* Navbar */
+:is(.nav-link) {
+    color: var(--secondary); 
+}
+  
+/* Navbar */
+a { 
+    transition: all .5s;
+ 
+
+ }
+
+ .navbar a:hover {
+    transform: scale(1.2);
+    text-decoration: underline;
+    color: var(--primary); 
+}
+
+.navbar-toggler {
+    border-color: var(--primary); 
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='pink' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); 
+}
+ 
+
+/* Page Name Style */
+.display-2{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Tiro Devanagari Hindi", serif;
+
+}
+
+:is(#about, #resume, #skills, #projects, #contactinfo){
+    margin-block: 5rem;
+}
+
+/* Select all images */
+img{
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Logo */
+img[alt='logo'] {
+    aspect-ratio: 1;
+    width: 5rem;
+       
+}
+/* Home Image */
+img[alt='profile'] {
+    width: 25rem;
+    border-color: var(--tertiary);
+    border-radius: 20%;
+}
+
+.lead {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Inknut Antiqua", serif;
+    margin-top: 7rem;
+}
+.slogan{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Inknut Antiqua", serif;
+}
+
+
+/* Animation for Landing Page */
+.image-1 {
+    overflow: hidden;
+  }
+  
+  .image-1{
+    opacity: 0; 
+    animation: fadeInLeft 1s forwards; 
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Animation for the Home tag */
+  .home-1 {
+    opacity: 0; 
+    animation: fadeInTop 1s forwards; 
+  }
+  
+  @keyframes fadeInTop {
+    from {
+      opacity: 0;
+      transform: translateY(-100%); 
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .lead {
+    opacity: 0; 
+    animation: fadeInRight 1s forwards; 
+    
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* About */
+.cardAbout{ 
+    background-color: var(--tertiary);
+    width: 90%;
+    margin-left: 5rem;
+    padding: 1rem;
+    border: black 2px solid;
+    
+}
+img[alt='about'] {
+    width: 20rem;
+    /* position: relative;
+    right: 35%; */
+}
+
+/* About text */
+.card-text{
+    text-align: left;
+    color: var(--secondary);
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+.card-text1{
+    color: var(--secondary);
+    font-size: 1.5rem;
+}
+.about-info{
+    margin-top: 2rem;
+}
+
+
+
+/* Responsive Landing+About */
+@media screen and (max-width: 768px) {
+    .cardAbout {
+        width: 100%;
+        margin-left: 0rem;
+    }
+
+    .lead {
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+    .display-2 {
+        font-size: 2rem;
+    }
+    img[alt='profile'] {
+        width: 90%;
+    }
+    img[alt='about'] {
+        width: 90%;
+    }
+    .card-text, .card-text1 {
+        font-size: 1rem;
+    }
+}
+
+/* Resume */
+.cardResume {
+    background-color: var(--tertiary);
+    margin-top: 1rem;
+}
+img[alt='resume'] {
+    width: 15rem;
+    height: 12rem;
+}
+
+img[alt='resume1'] {
+    width: 15rem;
+    height: 15rem;
+}
+img[alt='resume2'] {
+    width: 17rem;
+    height: 12rem;
+}
+
+.resume-item {
+    display: flex;
+    align-items:flex-start;
+   
+}
+
+.resume-text {
+    margin-left: 1rem;
+}
+
+.card-content {
+    padding: 0.5rem;
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+.cardResume {
+    margin-top: 1rem;
+}
+
+img[alt='resume'] {
+    width: 15rem;
+    height: 12rem;
+    margin: auto;
+}
+
+img[alt='resume1'] {
+    width: 15rem;
+    height: 15rem;
+    margin: auto;
+}
+
+img[alt='resume2'] {
+    width: 15rem;
+    height: 15rem;
+    margin: auto;
+}
+
+.resume-item {
+    display: flex;
+    align-items: center;
+}
+
+.resume-text {
+    margin-left: 0rem;
+}
+
+.card-content {
+    padding: 0.5rem;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+    .resume-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .resume-text {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+/* Skills Section */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.cardSkills{
+    margin-top: 1rem;
+    width: 100%;
+    border: black 1px solid;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align items to the end of the card */
+    height: 18rem; /* Set a fixed height for the cards */
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+img[alt='skills'] {
+ margin-bottom: 1rem;   
+}
+
+img[alt='skills1'] {
+    height: 10rem;  
+   }
+
+   img[alt='skills2'] {
+    margin-bottom: 1rem;
+    height: 8rem;
+
+   }
+ 
+.card-body{
+    background-color: var(--tertiary);
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    height: 6rem;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    .display-2 {
+      font-size: 2rem;
+    }
+  }
+
+   /* Projects */
+.Proj-block{
+    background-color: var(--tertiary);
+    margin-top: 1rem;  
+}
+
+.scrollable {
+    width: 50rem; 
+    margin-left: 15rem;
+    height: 30rem;
+    overflow-y: auto; 
+    scrollbar-width: thin; 
+    
+  }
+
+  @media only screen and (max-width: 767px) {
+    .scrollable {
+        width: 100%;
+        margin-left: 0; 
+    }
+}
+  
+  .scrollable::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .scrollable::-webkit-scrollbar-thumb:hover {
+    background-color: gray; 
+  }
+  
+  img[alt='project']{
+    width: 32rem;
+    margin-block: 1rem;
+  }
+
+  @media only screen and (max-width: 767px) {
+    img[alt='project'] {
+        width: 90%;
+        margin-left: 0; 
+    }
+}
+@media only screen and (max-width: 1205px) {
+    .scrollable{
+        width: 90%;
+        margin-left: 1rem;
+    }
+}
+
+.Proj-block{
+    margin-block: 2rem;
+}
+
+  .card-link{
+    color: var(--alternative);
+    background-color: var(--primary);
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 10%;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .card-link {
+        width: 100%;
+        margin-left: 0; 
+    }
+}
+
+
+
+.Project-Title{
+    font-weight: bold;
+}
+
+/* Testimonial */
+.Testi-block{
+    background-color: var(--tertiary); 
+    width: 45rem;
+    margin-left: 18rem;
+    border: 2px solid black
+}
+
+img[alt='testi'] {
+    width: 18rem;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+     
+ }
+
+ img[alt='testi1'] {
+    width: 18rem;
+    height: 25rem;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+ }
+
+  @media only screen and (max-width: 768px) {
+    img[alt='testi']  {
+        width: 80%; 
+        margin-left: 0; 
+}
+img[alt='testi1'] {
+    width: 70%; 
+    height: 16rem;
+    margin-left: 0; 
+}
+}
+
+
+@media only screen and (max-width: 768px) {
+    img[alt='testi1']  {
+        width: 80%; 
+        margin-left: 0; 
+}
+} 
+
+@media only screen and (max-width: 1205px) {
+    .Testi-block {
+       width: 100%;
+        margin-left: 0rem; 
+    }
+}
+
+.Testi-text{
+    margin-top: 2rem;
+    text-align: center;
+    width: 22rem;
+    margin-left: 11rem;
+
+}
+
+@media only screen and (max-width: 1205px) {
+    .Testi-text {
+        width: 100%;
+        margin-left: 0rem; 
+    }
+}
+
+/* Contact */
+.Contact{
+    background-color: var(--tertiary);
+    border: black 1px solid;
+    margin-bottom: 1rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.Contact-text{
+    font-weight: bold;
+    font-size: 2rem;
+    
+}
+ .mb-3{
+     width: 30rem;
+     margin:auto;
+ }
+ .message{
+     height: 17rem;
+ }
+ 
+ @media only screen and (max-width: 767px) {
+     .mb-3 {
+         width: 100%;
+         margin-left: 0;
+         margin-right: 0;
+     }
+ }
+ 
+ .last-button {
+     display: flex;
+     justify-content: center;
+     gap: 5rem; 
+     padding-bottom: 1rem;
+ }
+ 
+ :is(.fa-brands){
+     font-size: 2rem;
+     padding-right: 1rem;
+ }
+ 
+ .icon{
+    color: white;
+ }
+
+ .btn{
+    background-color: var(--primary);
+ }
+
+ .btn:hover {
+    transform: scale(1.2);
+}
