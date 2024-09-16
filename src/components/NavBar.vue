@@ -32,13 +32,7 @@
               <a class="nav-link" href="#resume">Resume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonials">Testimonials</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact Info</a>

@@ -24,7 +24,7 @@ section{
     --primary: rgb(248, 165, 179) ;
     --secondary: white;
     --alternative: rgb(7, 3, 3);
-    --tertiary: maroon;
+    --tertiary: rgb(118, 4, 4);
     --awesome: rgb(232, 37, 37);
     --mainBox-shadow: black;
     --shadow:var(--primary);
@@ -54,7 +54,7 @@ section{
 /* wrapper */
 :is(.wrapper){
     grid-template-rows: auto minmax(100dvh, 100%) auto;
-    background-color: var(--primary);
+    background-color: rgb(87, 5, 5);
 }
 
 /* app */
@@ -85,7 +85,7 @@ a {
  .navbar a:hover {
     transform: scale(1.2);
     text-decoration: underline;
-    color: var(--primary); 
+    color: #C4F0C5;
 }
 
 .navbar-toggler {
@@ -99,6 +99,7 @@ a {
 
 /* Page Name Style */
 .display-2{
+    color: white;
     font-size: 3rem;
     font-weight: bold;
     font-family: "Tiro Devanagari Hindi", serif;
@@ -124,17 +125,19 @@ img[alt='logo'] {
 /* Home Image */
 img[alt='profile'] {
     width: 25rem;
-    border-color: var(--tertiary);
+    border-color:  #935656;
     border-radius: 20%;
 }
 
 .lead {
+    color: white;
     font-size: 4rem;
     font-weight: bold;
     font-family: "Inknut Antiqua", serif;
     margin-top: 7rem;
 }
 .slogan{
+    color: white;
     font-size: 1rem;
     font-weight: bold;
     font-family: "Inknut Antiqua", serif;
@@ -196,45 +199,9 @@ img[alt='profile'] {
     }
   }
 
-  /* About */
-.cardAbout{ 
-    background-color: var(--tertiary);
-    width: 90%;
-    margin-left: 5rem;
-    padding: 1rem;
-    border: black 2px solid;
-    
-}
-img[alt='about'] {
-    width: 20rem;
-    /* position: relative;
-    right: 35%; */
-}
-
-/* About text */
-.card-text{
-    text-align: left;
-    color: var(--secondary);
-    font-size: 1.5rem;
-    margin-top: 3rem;
-}
-
-.card-text1{
-    color: var(--secondary);
-    font-size: 1.5rem;
-}
-.about-info{
-    margin-top: 2rem;
-}
-
-
 
 /* Responsive Landing+About */
 @media screen and (max-width: 768px) {
-    .cardAbout {
-        width: 100%;
-        margin-left: 0rem;
-    }
 
     .lead {
         font-size: 3rem;
@@ -246,31 +213,29 @@ img[alt='about'] {
     img[alt='profile'] {
         width: 90%;
     }
-    img[alt='about'] {
-        width: 90%;
-    }
-    .card-text, .card-text1 {
-        font-size: 1rem;
-    }
 }
 
 /* Resume */
 .cardResume {
-    background-color: var(--tertiary);
+    background-color: #935656;
     margin-top: 1rem;
+    border: #C4F0C5 2px solid;
 }
 img[alt='resume'] {
     width: 15rem;
     height: 12rem;
+   
 }
 
 img[alt='resume1'] {
     width: 15rem;
     height: 15rem;
+   
 }
 img[alt='resume2'] {
     width: 17rem;
     height: 12rem;
+   
 }
 
 .resume-item {
@@ -338,65 +303,10 @@ img[alt='resume2'] {
     }
 }
 
-/* Skills Section */
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-}
-
-.cardSkills{
-    margin-top: 1rem;
-    width: 100%;
-    border: black 1px solid;
-    border-radius: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* Align items to the end of the card */
-    height: 18rem; /* Set a fixed height for the cards */
-    overflow: hidden; /* Ensure content doesn't overflow */
-}
-
-img[alt='skills'] {
- margin-bottom: 1rem;   
-}
-
-img[alt='skills1'] {
-    height: 10rem;  
-   }
-
-   img[alt='skills2'] {
-    margin-bottom: 1rem;
-    height: 8rem;
-
-   }
- 
-.card-body{
-    background-color: var(--tertiary);
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-    height: 6rem;
-    width: 100%;
-    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
-}
-
-@media (max-width: 768px) {
-    .skills-grid {
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    }
-    .display-2 {
-      font-size: 2rem;
-    }
-  }
 
    /* Projects */
 .Proj-block{
-    background-color: var(--tertiary);
+    background-color: #935656;
     margin-top: 1rem;  
 }
 
