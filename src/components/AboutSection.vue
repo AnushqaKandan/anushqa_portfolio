@@ -41,7 +41,6 @@
         <Spinner v-else/>
      </div> 
     </div>
-    
     <div class="card text-white cardSkills">
      <div id="details">
         <div v-if="skills?.length">
@@ -80,14 +79,25 @@
         <Spinner v-else/>
      </div> 
     </div>
-
-    <div class="card text-white cardSkills">
+<div class="card text-white cardSkills">
      <div id="details">
         <div v-if="skills?.length">
-            <img src="https://anushqakandan.github.io/All-images/vue/Leadership1.png " alt="skills" class="img-skills" loading="lazy">
+            <img src="https://anushqakandan.github.io/All-images/vue/nodejs.png" alt="skills" class="img-skills" loading="lazy">
           <div class="card-body">
             <p class="Skills-Name">{{ skills[5].name }}</p>
             <p class="Skills-Level">{{ skills[5].level }}</p>
+          </div>
+        </div>
+        <Spinner v-else/>
+     </div> 
+    </div>
+    <div class="card text-white cardSkills">
+     <div id="details">
+        <div v-if="skills?.length">
+            <img src="https://anushqakandan.github.io/All-images/vue/mysql2.png" alt="skills" class="img-skills" loading="lazy">
+          <div class="card-body">
+            <p class="Skills-Name">{{ skills[6].name }}</p>
+            <p class="Skills-Level">{{ skills[6].level }}</p>
           </div>
         </div>
         <Spinner v-else/>
@@ -97,10 +107,10 @@
     <div class="card text-white cardSkills">
      <div id="details">
         <div v-if="skills?.length">
-            <img src="https://anushqakandan.github.io/All-images/vue/Communication.png " alt="skills" class="img-skills" loading="lazy">
+            <img src="https://anushqakandan.github.io/All-images/vue/Leadership1.png " alt="skills" class="img-skills" loading="lazy">
           <div class="card-body">
-            <p class="Skills-Name">{{ skills[6].name }}</p>
-            <p class="Skills-Level">{{ skills[6].level }}</p>
+            <p class="Skills-Name">{{ skills[7].name }}</p>
+            <p class="Skills-Level">{{ skills[7].level }}</p>
           </div>
       </div>
         <Spinner v-else/>
@@ -110,10 +120,22 @@
     <div class="card text-white cardSkills">
      <div id="details">
         <div v-if="skills?.length">
+            <img src="https://anushqakandan.github.io/All-images/vue/Communication.png " alt="skills" class="img-skills" loading="lazy">
+          <div class="card-body">
+            <p class="Skills-Name">{{ skills[8].name }}</p>
+            <p class="Skills-Level">{{ skills[8].level }}</p>
+          </div>
+        </div>
+        <Spinner v-else/>
+     </div> 
+             </div>
+             <div class="card text-white cardSkills">
+     <div id="details">
+        <div v-if="skills?.length">
             <img src="https://anushqakandan.github.io/All-images/vue/Practical1.png " alt="skills" class="img-skills" loading="lazy">
           <div class="card-body">
-            <p class="Skills-Name">{{ skills[7].name }}</p>
-            <p class="Skills-Level">{{ skills[7].level }}</p>
+            <p class="Skills-Name">{{ skills[9].name }}</p>
+            <p class="Skills-Level">{{ skills[9].level }}</p>
           </div>
         </div>
         <Spinner v-else/>
@@ -225,21 +247,24 @@ img[alt='about'] {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(5, 1fr); /* Display 5 skills in a row */
   gap: 1rem;
 }
 
 .cardSkills {
-    margin-top: 1rem;
-    width: 70%;
-    border: black 1px solid;
-    border-radius: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 12rem; /* Reduced height */
-    overflow: hidden;
+  margin-top: 1rem;
+  border: black 1px solid;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 12rem; /* Maintain height */
+  overflow: hidden;
+  width: 100%; /* Ensure full width of grid column */
 }
+
+
+
 
 img[alt='skills'] {
     margin-bottom: 0.5rem; /* Adjusted margin */
