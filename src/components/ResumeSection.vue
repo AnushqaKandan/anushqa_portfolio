@@ -1,7 +1,7 @@
 <template>
     <div class="container">
       <div class="row">
-          <h2 class="display-2">Resume</h2>
+          <h2 class="display-2">Education</h2>
       </div>
        
       <div class="row">
@@ -19,7 +19,7 @@
             </div> 
           </div>
   
-          <div class="card text-white cardResume">
+          <!-- <div class="card text-white cardResume">
             <div id="details" class="card-content">
                 <div v-if="resume?.length" class="resume-item">
                   <img src="https://anushqakandan.github.io/All-images/vue/Sigma2.png " alt="resume" class="img-resume3" loading="lazy">
@@ -31,7 +31,7 @@
                 <Spinner v-else/>
             </div> 
           </div>
-  
+   -->
           <div class="card text-white cardResume">
             <div id="details" class="card-content">
                 <div v-if="resume?.length" class="resume-item">

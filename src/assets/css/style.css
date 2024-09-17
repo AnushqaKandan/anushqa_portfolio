@@ -386,12 +386,6 @@ img[alt='resume2'] {
     }
 }
 
-
-
-.Project-Title{
-    font-weight: bold;
-}
-
 /* Testimonial */
 .Testi-block{
     background-color: var(--tertiary); 

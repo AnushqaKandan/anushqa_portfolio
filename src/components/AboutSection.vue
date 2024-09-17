@@ -176,7 +176,11 @@ onMounted(() => {
     margin-top: 3rem;
 
 }
-
+.img-about{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 20%;
+}
 .about-text{
   margin-bottom: 1rem;
 }
@@ -284,9 +288,9 @@ img[alt='skills1'], img[alt='skills2'] {
 }
 
 .card-body {
-  font-family: "Mochiy Pop One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-weight: bold;
+    font-family: "Tiro Devanagari Hindi", serif;
+    font-weight: 400;
     background-color: #935656;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;

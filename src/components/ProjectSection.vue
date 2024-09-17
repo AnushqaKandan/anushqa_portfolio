@@ -112,8 +112,7 @@ import { computed, onMounted } from 'vue'
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 
 .Project-Title{
-  font-family: "Mochiy Pop One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Tiro Devanagari Hindi", serif;
+    font-size: 1.5rem;
 }
 </style>

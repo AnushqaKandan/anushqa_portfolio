@@ -29,7 +29,7 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#resume">Resume</a>
+              <a class="nav-link" href="#resume">Education</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
@@ -44,12 +44,13 @@
   </template>
 
   <style>
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
-
 .nav-link{
-  font-family: "Mochiy Pop One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-weight: bold;
+  font-family: "Tiro Devanagari Hindi", serif;
+ 
+}
+.nav-item{
+  font-size: 1.5rem;
 }
 </style>
   
