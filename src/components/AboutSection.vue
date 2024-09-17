@@ -9,7 +9,7 @@
         <div id="details">
             <div v-if="about?.length">
                 <div class="anushqa">
-                  <img src="https://anushqakandan.github.io/All-images/Images/Anushqa04.jpg " alt="about" class="img-about" loading="lazy">
+                  <img src="https://anushqakandan.github.io/All-images/vue/AnuLC.jpg " alt="about" class="img-about" loading="lazy">
                       <div class="about-info"> 
                         <p class="card-text">{{ about[0].message }}</p>
                       </div>
