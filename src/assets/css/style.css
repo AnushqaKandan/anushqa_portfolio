@@ -54,7 +54,7 @@ section{
 /* wrapper */
 :is(.wrapper){
     grid-template-rows: auto minmax(100dvh, 100%) auto;
-    background-color: rgb(87, 5, 5);
+    background-color: rgb(1, 1, 15);
 }
 
 /* app */
@@ -67,7 +67,7 @@ section{
 
   /*Navbar & footer*/
 :is(.navbar, footer){
-    background-color: var(--tertiary);
+    background-color: rgb(3, 3, 46);
 }
 
 /* Navbar */
@@ -85,7 +85,7 @@ a {
  .navbar a:hover {
     transform: scale(1.2);
     text-decoration: underline;
-    color: #C4F0C5;
+    color: #F5CB86;
 }
 
 .navbar-toggler {
@@ -99,7 +99,7 @@ a {
 
 /* Page Name Style */
 .display-2{
-    color: white;
+    color:#F5CB86;
     font-size: 3rem;
     font-weight: bold;
     font-family: "Tiro Devanagari Hindi", serif;
@@ -125,8 +125,9 @@ img[alt='logo'] {
 /* Home Image */
 img[alt='profile'] {
     width: 25rem;
-    border-color:  #935656;
+    border-color: black;
     border-radius: 20%;
+    margin-top: 1rem;
 }
 
 .lead {
@@ -137,7 +138,7 @@ img[alt='profile'] {
     margin-top: 7rem;
 }
 .slogan{
-    color:  #C4F0C5;
+    color:#F5CB86;
     font-size: 1.5rem;
     font-weight: bold;
     font-family: "Inknut Antiqua", serif;
@@ -215,107 +216,10 @@ img[alt='profile'] {
     }
 }
 
-/* Resume */
-.cardResume {
-    background-color: #935656;
-    margin-top: 1rem;
-    border: #C4F0C5 2px solid;
-}
-img[alt='resume'] {
-    width: 15rem;
-    height: 12rem;
-   
-}
-
-img[alt='resume1'] {
-    width: 15rem;
-    height: 15rem;
-   
-}
-img[alt='resume2'] {
-    width: 17rem;
-    height: 12rem;
-   
-}
-
-.resume-item {
-    display: flex;
-    align-items:flex-start;
-   
-}
-.Resume-Title{
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.resume-text {
- margin-left: 1rem;
- font-family: "Tiro Devanagari Hindi", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.card-content {
-    padding: 0.5rem;
-}
-
-
-/* Responsiveness */
-@media screen and (max-width: 768px) {
-.cardResume {
-    margin-top: 1rem;
-}
-
-img[alt='resume'] {
-    width: 15rem;
-    height: 12rem;
-    margin: auto;
-}
-
-img[alt='resume1'] {
-    width: 15rem;
-    height: 15rem;
-    margin: auto;
-}
-
-img[alt='resume2'] {
-    width: 15rem;
-    height: 15rem;
-    margin: auto;
-}
-
-.resume-item {
-    display: flex;
-    align-items: center;
-}
-
-.resume-text {
-    margin-left: 0rem;
-}
-
-.card-content {
-    padding: 0.5rem;
-}
-
-}
-
-@media screen and (max-width: 768px) {
-    .resume-item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .resume-text {
-        margin-left: 0;
-        margin-top: 1rem;
-    }
-}
-
-
-
 
    /* Projects */
 .Proj-block{
-    background-color: #935656;
+    background-color: rgb(3, 3, 46);
     margin-top: 1rem;  
 }
 
@@ -372,11 +276,8 @@ img[alt='resume2'] {
 }
 
   .card-link{
-    color: var(--alternative);
-    background-color: var(--primary);
-    font-size: larger;
-    font-weight: bold;
-    border-radius: 10%;
+    color:#F5CB86;
+    font-size: 2rem;
   }
 
   @media only screen and (max-width: 767px) {

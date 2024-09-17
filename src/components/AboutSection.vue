@@ -3,13 +3,11 @@
     <div class="row">
         <h2 class="display-2">About</h2>
     </div>
-    
-    <div class="card cardAbout">
+   
      <div class="col"> 
         <div id="details">
             <div v-if="about?.length">
                 <div class="anushqa">
-                  <img src="https://anushqakandan.github.io/All-images/vue/AnuLC.jpg " alt="about" class="img-about" loading="lazy">
                       <div class="about-info"> 
                         <p class="card-text">{{ about[0].message }}</p>
                       </div>
@@ -145,9 +143,7 @@
         </div> 
       </div>
       </div>
-      </div>
     </div>
-
   </div>
   
 </template>
@@ -167,9 +163,10 @@ onMounted(() => {
 </script>
 
 <style scoped>
+
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
 .display-3{
-    color: white;
+    color: #F5CB86;
     font-size: 2rem;
     font-weight: bold;
     font-family: "Tiro Devanagari Hindi", serif;
@@ -186,15 +183,6 @@ onMounted(() => {
 }
 .cardAbout { 
     background-color: transparent;
-    width: 100%;
-    padding: 1rem;
-    border:  rgb(248, 165, 179);
-    box-shadow: 0 0 10px white;
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.cardAbout:hover {
-    box-shadow: 0 0 20px 10px rgb(248, 165, 179);
 }
 
 img[alt='about'] {
@@ -206,7 +194,7 @@ img[alt='about'] {
   font-family: "Tiro Devanagari Hindi", serif;
   font-weight: 400;
   font-style: normal;
-    text-align: left;
+    text-align: center;
     color: var(--secondary);
     font-size: 1.5rem;
     margin-top: 3rem;
@@ -291,7 +279,7 @@ img[alt='skills1'], img[alt='skills2'] {
   font-weight: bold;
     font-family: "Tiro Devanagari Hindi", serif;
     font-weight: 400;
-    background-color: #935656;
+    background-color:#03346E;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
     height: 5rem; /* Reduced height */

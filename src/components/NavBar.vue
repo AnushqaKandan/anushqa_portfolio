@@ -29,7 +29,7 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#resume">Education</a>
+              <a class="nav-link" href="#resume">Education & Experience</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
@@ -50,7 +50,7 @@
  
 }
 .nav-item{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 </style>
   

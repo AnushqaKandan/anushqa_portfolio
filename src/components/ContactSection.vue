@@ -109,14 +109,14 @@ onMounted(() => {
 /* Contact card and form card styling */
 .contact-card {
   flex: 1;
-  border: 1px solid rgb(248, 165, 179);
+  border: 1px solid #F5CB86;
   background-color: transparent;
   margin-bottom: 1.5rem;
 }
 .form-card{
   flex: 1;
-  background-color: #935656;
-  border: 1px solid rgb(248, 165, 179);
+  background-color: transparent;
+  border: 1px solid #F5CB86;
   margin-bottom: 1.5rem;
 }
 
@@ -148,7 +148,8 @@ onMounted(() => {
 }
 
 .btn {
-  background-color: maroon;
+  background-color: transparent;
+  border: white 1px solid;
   color: white;
 }
 
@@ -167,13 +168,3 @@ onMounted(() => {
   }
 }
 </style>
-
-<!-- <style>
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
-
-.Project-Title{
-  font-family: "Mochiy Pop One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-</style> -->

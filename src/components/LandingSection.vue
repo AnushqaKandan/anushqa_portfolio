@@ -1,8 +1,8 @@
 <template>
-    <div class="container" id="home">
+    <div class="container-fluid" id="home">
       <div class="row flex-column flex-md-row">
        <div class="col image-1">
-          <img src="https://anushqakandan.github.io/All-images/Images/AnushiPro3.JPG " alt="profile" class="img-thumbnail border-5" loading="lazy">
+          <img src="https://anushqakandan.github.io/All-images/vue/AnuLC.jpg " alt="profile" class="img-thumbnail border-5" loading="lazy">
        </div>
   
        <div class="col"> 
