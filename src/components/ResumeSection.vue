@@ -4,9 +4,10 @@
           <h2 class="display-2">Education & Work Experience</h2>
       </div> -->
       
-      <div class="row">
+      <div class="row" data-aos="fade-up">
           <!-- Education Section -->
           <div class="col-md-6">
+            
               <h2 class="section-title display-2">Education</h2>
               <div class="card text-white cardResume">
                   <div id="details" class="card-content">

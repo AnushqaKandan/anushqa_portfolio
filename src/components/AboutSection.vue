@@ -3,7 +3,8 @@
     <div class="row">
         <h2 class="display-2">About</h2>
     </div>
-   
+    
+    <div data-aos="fade-up">
      <div class="col"> 
         <div id="details">
             <div v-if="about?.length">
@@ -13,6 +14,7 @@
                       </div>
                 </div>
        <div class="about-text">
+        <div data-aos="fade-up">
         <h2 class="display-3">Skills</h2>
       <div class="skills-grid"> 
      <div class="card text-white cardSkills">
@@ -140,12 +142,13 @@
      </div> 
              </div>
             </div>
+          </div>
         </div> 
       </div>
       </div>
     </div>
   </div>
-  
+</div>
 </template>
 
 <script setup>

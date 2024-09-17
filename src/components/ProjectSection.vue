@@ -3,7 +3,7 @@
       <div class="row">
           <h2 class="display-2">Projects</h2>
       </div>
-      <div class="row">
+      <div class="row" data-aos="fade-up">
       <div class="scrollable"> 
           <div class="card text-white Proj-block">
             <div id="details" class="card-content">

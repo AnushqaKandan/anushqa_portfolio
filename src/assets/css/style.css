@@ -9,11 +9,6 @@
     box-sizing: border-box;
 
 }
-/* Custom variables */
-::-webkit-scrollbar {
-    display: none;
-}
-
 
 section{
     scroll-margin-block: 6.7rem;
