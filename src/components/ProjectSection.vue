@@ -107,3 +107,13 @@ import { computed, onMounted } from 'vue'
       store.dispatch('fetchProjects')
   })
 </script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+.Project-Title{
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+</style>

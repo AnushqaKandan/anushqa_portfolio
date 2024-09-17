@@ -42,5 +42,15 @@
       </div>
     </nav>
   </template>
+
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+.nav-link{
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
   
   

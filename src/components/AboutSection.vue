@@ -195,6 +195,9 @@ img[alt='about'] {
 
 /* About text */
 .card-text {
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-weight: 400;
+  font-style: normal;
     text-align: left;
     color: var(--secondary);
     font-size: 1.5rem;
@@ -204,6 +207,7 @@ img[alt='about'] {
 .card-text1 {
     color: var(--secondary);
     font-size: 1.5rem;
+
 }
 
 .about-info {
@@ -276,6 +280,9 @@ img[alt='skills1'], img[alt='skills2'] {
 }
 
 .card-body {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
     background-color: #935656;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;

@@ -243,9 +243,16 @@ img[alt='resume2'] {
     align-items:flex-start;
    
 }
+.Resume-Title{
+  font-size: 1rem;
+  font-weight: 500;
+}
 
 .resume-text {
     margin-left: 1rem;
+    font-family: "Tiro Devanagari Hindi", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .card-content {
@@ -304,10 +311,18 @@ img[alt='resume2'] {
 }
 
 
+
+
    /* Projects */
 .Proj-block{
     background-color: #935656;
     margin-top: 1rem;  
+}
+
+.Project-Description{
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-weight: 400;
+  font-style: normal; 
 }
 
 .scrollable {

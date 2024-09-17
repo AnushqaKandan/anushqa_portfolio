@@ -84,7 +84,17 @@ onMounted(() => {
 .display-2{
   margin-top: 1rem;
 }
-
+.form-label{
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+.contact-info{
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-weight: 400;
+  font-style: normal; 
+}
 .contact-card p {
   font-size: 1.2rem; /* Increase the size of the text inside the contact card */
 }
@@ -157,3 +167,13 @@ onMounted(() => {
   }
 }
 </style>
+
+<!-- <style>
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+.Project-Title{
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+</style> -->
