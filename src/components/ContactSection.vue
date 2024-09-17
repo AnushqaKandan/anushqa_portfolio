@@ -12,11 +12,11 @@
           <div v-if="contact?.length">
             <p><i class="bi bi-telephone-forward-fill"></i> Contact number: {{ contact[0].phone }}</p>
             <p><i class="fa-solid fa-envelope"></i> Email Address: {{ contact[0].email }}</p>
-            <p><i class="fa-sharp fa-solid fa-location-dot"></i> Location: {{ contact[0].location }}</p>
             <p>
               <a class="icon" href="https://github.com/anushqakandan" target="_blank"><i class="fa-brands fa-github"></i></a>
               <a class="icon" href="https://www.linkedin.com/in/anushqa-kandan-09379a317/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </p>
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52893.1530907546!2d18.561739288993632!3d-34.04843507824646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc4721e60ec221%3A0xd3097704b4edb9ac!2sMitchells%20Plain%2C%20Cape%20Town!5e0!3m2!1sen!2sza!4v1726552905113!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
           </div>
           <Spinner v-else />
         </div>
