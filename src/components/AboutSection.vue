@@ -173,8 +173,12 @@ onMounted(() => {
     font-size: 2rem;
     font-weight: bold;
     font-family: "Tiro Devanagari Hindi", serif;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
 
+}
+
+.about-text{
+  margin-bottom: 1rem;
 }
 .cardAbout { 
     background-color: transparent;
