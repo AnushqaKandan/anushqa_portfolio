@@ -174,9 +174,9 @@ p iframe {
 }
 
 /* Responsive styling for smaller screens */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   .contact-container {
-    flex-direction: column; /* Stack cards vertically on small screens */
+    flex-direction: column;
   }
   
   .mb-3 {

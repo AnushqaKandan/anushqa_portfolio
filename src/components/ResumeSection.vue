@@ -121,7 +121,7 @@ img {
 }
 
 /* Responsiveness */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .cardResume {
       margin-top: 1rem;
   }
