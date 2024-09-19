@@ -7,7 +7,7 @@
       <!-- Contact Info Card -->
       <div class="card contact-card text-white" 
            data-aos="fade-right" 
-           data-aos-delay="200" 
+           data-aos-delay="100" 
            data-aos-offset="300">
         <h2 class="display-2 text-center">Contact Info</h2>
         <div class="contact-info">
