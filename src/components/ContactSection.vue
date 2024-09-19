@@ -167,11 +167,11 @@ onMounted(() => {
   transform: scale(1.2);
 }
 
-/* p iframe {
+p iframe {
   width: 100%;
   height: 300px;
   border: 0;
-} */
+}
 
 /* Responsive styling for smaller screens */
 @media only screen and (max-width: 767px) {
