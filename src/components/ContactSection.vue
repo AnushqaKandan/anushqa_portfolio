@@ -5,10 +5,7 @@
     <!-- Flexbox for side-by-side layout -->
     <div class="contact-container">
       <!-- Contact Info Card -->
-      <div class="card contact-card text-white" 
-           data-aos="fade-right" 
-           data-aos-delay="100" 
-           data-aos-offset="300">
+      <div class="card contact-card text-white">
         <h2 class="display-2 text-center">Contact Info</h2>
         <div class="contact-info">
           <div v-if="contact?.length">
@@ -29,10 +26,7 @@
       </div>
 
       <!-- Form -->
-      <div class="card form-card text-white" 
-           data-aos="fade-left" 
-           data-aos-delay="200" 
-           data-aos-offset="300">
+      <div class="card form-card text-white">
         <h2 class="display-2 text-center">Let's work together</h2>
         <form action="https://formspree.io/f/myzgydyw" method="POST">
           <div class="mb-3">
